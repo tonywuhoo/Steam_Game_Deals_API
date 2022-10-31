@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 import { promises as fsPromises } from 'fs';
 import Allgame from "../models/Allgame.js"
 
-
+function doShit() {
 fetch('https://www.cheapshark.com/api/1.0/deals?storeID=1')
   .then(response => response.json())
   .then(data => {
@@ -27,4 +27,8 @@ async function insertData() {
   await db.close()
 } 
 
-insertData()
+  insertData()
+  
+}
+
+export default doShit
