@@ -20,7 +20,6 @@ fetch('https://www.cheapshark.com/api/1.0/deals?storeID=1')
 
 
 async function insertData() {
-  await db.dropDatabase()
 
   await Allgame.create(allgames)
 
