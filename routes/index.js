@@ -1,18 +1,14 @@
 import { Router } from "express"
-import playerRoutes from "./nbaplayers.js"
-import teamRoutes from "./nbateams.js"
+import gamesRoutes from "./allgames.js"
 
 const router = Router()
 
 router.get("/", (request, response) => {
   response.json({
-    "Players" : "http://localhost:3000/players",
-    "Teams": "http://localhost:3000/teams",
-    "Instructions": "Search players by last name, search teams by abbreviations. Enjoy"
+    "All Games" : "http://localhost:3000/games",
   })
 })
 
-router.use("/players", playerRoutes)
-router.use("/teams", teamRoutes)
+router.use("/games", gamesRoutes)
 
 export default router

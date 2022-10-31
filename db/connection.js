@@ -5,7 +5,7 @@ import chalk from "chalk";
 mongoose.set("returnOriginal", false)
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/NBAAPI")
+  .connect("mongodb://127.0.0.1:27017/CHEAPGAMES")
   .catch((error) => {
     console.error("There's an error ", error)
   })
