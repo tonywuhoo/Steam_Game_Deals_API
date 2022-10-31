@@ -1,7 +1,7 @@
 {
-  "name": "nbaplayersapi",
+  "name": "steam_games_deal",
   "version": "1.0.0",
-  "description": "Free public API that is used to access NBA team stats",
+  "description": "Free public API that is used to access cheap steam deals",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,10 +24,10 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tonywuhoo/nbaplayers_api.git"
+    "url": "git+https://github.com/tonywuhoo/Steam_Dealers_API"
   },
   "bugs": {
-    "url": "https://github.com/tonywuhoo/nbaplayers_api/issues"
+    "url": "https://github.com/tonywuhoo/Steam_Dealers_API/issues"
   },
-  "homepage": "https://github.com/tonywuhoo/nbaplayers_api#readme"
+  "homepage": "https://github.com/tonywuhoo/Steam_Dealers_API"
 }

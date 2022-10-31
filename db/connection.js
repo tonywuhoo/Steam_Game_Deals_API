@@ -4,8 +4,10 @@ import chalk from "chalk";
 
 mongoose.set("returnOriginal", false)
 
+const url = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/CHEAPGAMES'
+
 mongoose
-  .connect("mongodb://127.0.0.1:27017/CHEAPGAMES")
+  .connect(url)
   .catch((error) => {
     console.error("There's an error ", error)
   })

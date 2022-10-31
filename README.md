@@ -1,30 +1,26 @@
-# nbaplayers_api
-Free public API that is used to access NBA team stats
+# gamedeals api
+Free public API that is used to access steam games that are on sale
+
+This data was sourced from 
+
+https://www.cheapshark.com
+
 
 GET ENDPOINTS
 
 Request with no parameters:
 
-localhost:3000/teams
+localhost:3000/games
 
--Returns entire database of teams-
+-Returns entire database of game deals-
 
-localhost:3000/players
-
--Return entire database of players-
+URL Parameter Queries
 
 
+http://localhost:3000/games?steamRatingPercent=10
 
-Search player by last name:
+steamRatingPercent : To search by steam ratings above paramter
 
-localhost:3000/players/"player's last name"
+http://localhost:3000/games?internalName=DIVINEDIVINITY
 
-EX:
-
-http://localhost:3000/players/Ansley
-
-Return:
-
-[{"team":{"id":22,"abbreviation":"ORL","city":"Orlando","conference":"East","division":"Southeast","full_name":"Orlando Magic","name":"Magic"},"_id":"63518d38fdb0a39117ae4269","id":497,"first_name":"Michael","height_feet":null,"height_inches":null,"last_name":"Ansley","position":"","weight_pounds":null,"__v":0}]
-
-
+internalName : Search specific game by title
