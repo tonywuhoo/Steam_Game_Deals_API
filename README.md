@@ -10,17 +10,24 @@ GET ENDPOINTS
 
 Request with no parameters:
 
-localhost:3000/games
+https://steamdealersapi-production.up.railway.app/games
 
 -Returns entire database of game deals-
 
 URL Parameter Queries
 
 
-http://localhost:3000/games?steamRatingPercent=10
+https://steamdealersapi-production.up.railway.app/games?steamRatingPercent=10
 
 steamRatingPercent : To search by steam ratings above paramter
 
-http://localhost:3000/games?internalName=DIVINEDIVINITY
+
+
+https://steamdealersapi-production.up.railway.app/games?internalName=DIVINEDIVINITY
 
 internalName : Search specific game by title
+
+
+https://steamdealersapi-production.up.railway.app/dealRating=8
+
+dealRating : Search by deal rating, how good of a deal you are getting
