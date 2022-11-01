@@ -28,6 +28,6 @@ https://steamdealersapi-production.up.railway.app/games?internalName=DIVINEDIVIN
 internalName : Search specific game by title
 
 
-https://steamdealersapi-production.up.railway.app/dealRating=8
+https://steamdealersapi-production.up.railway.app/games?dealRating=8
 
 dealRating : Search by deal rating, how good of a deal you are getting
